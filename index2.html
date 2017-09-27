@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		first task
+	</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+
+let n = 1;
+
+function isSimple(m) {
+  for(let i = 2; i < m; i++) {
+    if(m % i === 0) return false;
+  }
+  return true;
+}
+
+for(let i = 2; i < 50; i++) {
+  if(isSimple(i)) n *= i;
+}
+
+console.log(n);
+
+</script>     
+</html>

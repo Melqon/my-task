@@ -1,0 +1,80 @@
+<!DOCTYPE>
+
+<html style="background-color: #3f3a82 ;text-align: center">
+<head>
+
+<title>Задачи по JavaScript</title>
+
+</head>
+
+<body>
+
+
+<h1>Калькулятор<br /></h1>
+
+<h2 >Введите первое число:</h2><input id='1' name="login" type="text" size="50" maxlength="30" value="" style="width: 400; height: 50; margin: 10; border: 1px solid; outline: 4px solid;"    /> <br />
+
+
+<div style="margin: 5 auto;width: 400px; font-size:25px"  id="lines"></div>
+<h2>Введите второе число</h2>
+<input id='2' type="text" size="500" maxlength="30" value="" style="width: 400; height: 50; margin: 10;border: 1px solid; outline: 4px solid;"   /> <br />
+<input type="button" value="+"  onclick="gumarac()"  style="width: 65; height: 65;border: 1px solid; outline: 2px solid;" />
+<input type="button" value="-"  onclick="hanac()" style="width: 65; height: 65;border: 1px solid; outline: 2px solid;"/>
+<input type="button" value="*"  onclick="angam()" style="width: 65; height: 65;border: 1px solid; outline: 2px solid;"/>
+<input type="button" value="/"  onclick="bajanum()" style="width: 65; height: 65;border: 1px solid; outline: 2px solid;"/>
+<input type="button" value="%"  onclick="tokos()" style="width: 65; height: 65;border: 1px solid; outline: 2px solid;"/>
+<input type="button" value="**"  onclick="astichan()" style="width: 65; height: 65;border: 1px solid; outline: 2px solid;	"/>
+<div style="margin: 5 auto;width: 400px;font-size:25px" id="lines1"  ></div>
+
+</body>
+
+
+<script>
+
+ 
+     function	gumarac(){
+     		var  num1 = document.getElementById(1).value
+ 	var  num2 = document.getElementById(2).value
+ 	num1 = parseInt(num1)
+ 		num2 = parseInt(num2)
+ 		
+     	alert("Ответ :"+" "+parseInt(num1+num2))}
+
+
+     	 function	hanac(){
+     		var  num1 = document.getElementById(1).value
+ 	var  num2 = document.getElementById(2).value
+ 		
+     	alert("Ответ :"+"  "+parseInt(num1-num2))}
+
+     	 function	angam(){
+     		var  num1 = document.getElementById(1).value
+ 	var  num2 = document.getElementById(2).value
+ 		
+     	alert("Ответ :"+"  "+num1*num2)}
+
+     	 function	bajanum(){
+     		var  num1 = document.getElementById(1).value
+ 	var  num2 = document.getElementById(2).value
+ 		
+     	alert("Ответ :"+"  "+num1/num2)}
+
+     	 function	tokos(){
+     		var  num1 = document.getElementById(1).value
+ 	var  num2 = document.getElementById(2).value
+ 		
+     	alert("Ответ :"+"  "+ num1%num2)}
+
+     	function	astichan(){
+     		var  num1 = document.getElementById(1).value
+ 	var  num2 = document.getElementById(2).value
+ 		
+     	alert("Ответ :"+"  "+num1**num2)}
+
+
+
+
+</script>
+
+
+</html>

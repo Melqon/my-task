@@ -1,17 +1,35 @@
+html,body {
+	flex-direction: column;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 #Game {
-	text-align: center;
-	width: 300px;
-	height: 300px;
+	width: 450px;
+	height: 450px;
 	background: orangered;
 }
 
 .block {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	float: left;
-	border: 1px solid black;
+	border: 8px solid ;
 	box-sizing: border-box;
-	
+
 	text-align: center;
-	font-size: 80px;
+	font-size: 120px;
+}
+
+#text {
+
+	color:black;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bolder;
+
+
 }
